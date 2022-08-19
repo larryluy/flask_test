@@ -1,0 +1,8 @@
+<h3>welcome {{ user_id }}</h3>
+<h3>{{ user.username }}</h3>
+<form action="/update" method="post">
+    <input name="id" type="hidden" value="{{ user.id }}">
+    <input name="username" value="{{ user.username }}">
+    <input name="email" value="{{ user.email }}">
+    <input type="submit">
+</form>
